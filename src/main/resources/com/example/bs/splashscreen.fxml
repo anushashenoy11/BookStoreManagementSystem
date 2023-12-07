@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="464.0" prefWidth="520.0" style="-fx-background-color: #16282c;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bs.Main">
+    <children>
+        <ImageView fitHeight="384.0" fitWidth="428.0" layoutX="46.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Bookanimation.gif" />
+            </image>
+        </ImageView>
+        <Label layoutX="173.0" layoutY="91.0" prefHeight="72.0" prefWidth="173.0" text="WELCOME">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

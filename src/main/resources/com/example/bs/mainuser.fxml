@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="1080.0" style="-fx-background-color: #162a2c;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bs.UserController">
+    <children>
+        <Label layoutX="30.0" layoutY="29.0" text="Search Book" textFill="#ffeeee">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <TableView fx:id="bookTable" layoutX="30.0" layoutY="67.0" prefHeight="502.0" prefWidth="1020.0">
+            <columns>
+                <TableColumn fx:id="bookID" prefWidth="70.0" text="Book ID" />
+                <TableColumn fx:id="bookTitle" prefWidth="240.0" text="Title" />
+                <TableColumn fx:id="bookAuthor" minWidth="0.0" prefWidth="140.0" text="Author" />
+                <TableColumn fx:id="bookPrice" prefWidth="70.0" text="Price" />
+                <TableColumn fx:id="bookStock" prefWidth="70.0" text="Stock" />
+                <TableColumn fx:id="bookDescription" prefWidth="428.0" text="Description" />
+            </columns>
+        </TableView>
+        <TextField fx:id="keywords" layoutX="126.0" layoutY="27.0" prefHeight="25.0" prefWidth="923.0" promptText="Enter book title" />
+        <Button layoutX="788.0" layoutY="592.0" mnemonicParsing="false" onAction="#CartView" prefHeight="34.0" prefWidth="123.0" text="View Cart" textFill="#224142">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="logout" layoutX="204.0" layoutY="592.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="34.0" prefWidth="123.0" text="Log Out" textFill="#224142">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="414.0" layoutY="599.0" prefHeight="20.0" prefWidth="282.0" text="Double click on the row to add to cart" textFill="#ffeeee">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+    </children>
+</Pane>

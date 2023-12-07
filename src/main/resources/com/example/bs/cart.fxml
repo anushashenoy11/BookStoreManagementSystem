@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="700.0" style="-fx-background-color: #162a2c;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bs.CartController">
+    <children>
+        <Label layoutX="280.0" layoutY="29.0" prefHeight="27.0" prefWidth="116.0" text="YOUR CART" textFill="#ffeeee">
+            <font>
+                <Font name="Bookman Old Style Bold" size="18.0" />
+            </font>
+        </Label>
+        <TableView fx:id="cartTable" layoutX="100.0" layoutY="66.0" prefHeight="502.0" prefWidth="500.0">
+            <columns>
+                <TableColumn fx:id="cartid" prefWidth="95.0" text="Book ID" />
+                <TableColumn fx:id="cartTitle" prefWidth="279.19995880126953" text="Title" />
+                <TableColumn fx:id="cartPrice" prefWidth="124.80001831054688" text="Price" />
+            </columns>
+        </TableView>
+        <Button fx:id="buy" layoutX="529.0" layoutY="632.0" mnemonicParsing="false" onAction="#thankyou" prefHeight="34.0" prefWidth="123.0" text="Buy Now" textFill="#224142">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Label layoutX="242.0" layoutY="585.0" prefHeight="27.0" prefWidth="140.0" text="Your Total: Rs" textFill="#ffeeee">
+            <font>
+                <Font name="Bookman Old Style Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="cost" layoutX="389.0" layoutY="585.0" prefHeight="27.0" prefWidth="140.0" text="240" textFill="#ffeeee">
+            <font>
+                <Font name="Bookman Old Style Bold" size="18.0" />
+            </font>
+        </Label>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+        <Button fx:id="Back" layoutX="39.0" layoutY="632.0" mnemonicParsing="false" onAction="#backtomain" prefHeight="34.0" prefWidth="123.0" text="Back" textFill="#224142">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+    </children>
+</Pane>

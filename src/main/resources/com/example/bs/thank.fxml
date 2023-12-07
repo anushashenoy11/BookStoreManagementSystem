@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="464.0" prefWidth="520.0" style="-fx-background-color: #16282c;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bs.Main">
+    <children>
+        <Label layoutX="109.0" layoutY="283.0" prefHeight="78.0" prefWidth="332.0" text="Please Proceed to Check-out " textAlignment="RIGHT" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="74.0" layoutY="322.0" prefHeight="78.0" prefWidth="402.0" text="Your books are waiting for you :)" textAlignment="RIGHT" textFill="WHITE">
+            <font>
+                <Font name="Bookman Old Style" size="24.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="bookim" fitHeight="202.0" fitWidth="434.0" layoutX="109.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../th.jpg" />
+            </image></ImageView>
+    </children>
+</AnchorPane>
